@@ -71,7 +71,7 @@ class AppState extends State<App> {
   }
 
   getWeather(String city) async {
-    final url = 'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=8f87eb169586792978bebf24aa790cb9';
+    final url = 'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=apiKey';
 
     try {
       final res = await get(Uri.parse(url));
